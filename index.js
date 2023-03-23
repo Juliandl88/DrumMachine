@@ -90,7 +90,7 @@ function App() {
           />
         ))}
         <br />
-        <h4 className="p-3">Volume</h4>
+        <h4 className="p-3">Volume Settings</h4>
         <input
           type="range"
           step="0.01"
@@ -103,14 +103,14 @@ function App() {
         <h3 className="p-3">{recording}</h3>
         {recording && (
           <>
-            <button onClick={playRecording} className="btn btn-success m-2">
-              Play  
+            <button onClick={playRecording} className="btn btn-success m-2 p-2">
+              Play
             </button>
-            <button onClick={() => setRecording("")} className="btn btn-danger m-2">
+            <button onClick={() => setRecording("")} className="btn btn-danger m-2 p-2">
               Clear
             </button>
             <br />
-            <h4 className="p-3">Speed</h4>
+            <h4 className="p-3">Speed modificator</h4>
             <input
               type="range"
               step="0.01"
